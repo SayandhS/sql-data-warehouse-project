@@ -1,2 +1,4 @@
-# sql-data-warehouse-project
-Building a modern Data Warehouse with PostgreSQL, including ETL Techniques, Data Modelling and Analytics.
+# Data Warehouse and Analytics Project
+
+Welcome to the **Data Warehouse and Analytics Project** Repository!
+This project demonstrates a comprehensive....placeholder placeholder
