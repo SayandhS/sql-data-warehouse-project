@@ -1,3 +1,11 @@
+/*=====================================================================================
+Stored Procedure: Stored procedure query for truncate and loading data into SILVER Layer.
+=====================================================================================
+This script containes the stored procedure for truncating the tables and loading the transformed data
+into the silver layers, it should then be followed by calling the stored procedure using the CALL command.
+=====================================================================================
+Usage Example: CALL silver.load_silver();
+*/
 CREATE OR REPLACE PROCEDURE silver.load_silver()
 LANGUAGE plpgsql
 AS $$
