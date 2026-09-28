@@ -103,6 +103,44 @@ The Gold Layer follows a **Star Schema** design.
 - Medallion Architecture
 - Star Schema Modeling
 
+## Repository Structure
+```
+sql-data-warehouse-project/
+    ├── datasets/
+    │   ├── source_crm/
+    │   │   ├── cust_info.csv
+    │   │   ├── prd_info.csv
+    │   │   └── sales_details.csv
+    │   ├── source_erp/
+    │   │   ├── CUST_AZ12.csv
+    │   │   ├── LOC_A101.csv
+    │   │   └── PX_CAT_G1V2.csv
+    │   └── placeholder
+    ├── docs/
+    │   ├── star schema main.png
+    │   └── System Architecture main.png
+    ├── scripts/
+    │   ├── bronze/
+    │   │   ├── ddl_bronze.sql
+    │   │   ├── load_bronze.sql
+    │   │   ├── proc_bronze.sql
+    │   │   └── validation_bronze.sql
+    │   ├── gold/
+    │   │   ├── ddl_gold.sql
+    │   │   └── validation_gold.sql
+    │   ├── silver/
+    │   │   ├── ddl_silver.sql
+    │   │   ├── placeholder
+    │   │   ├── proc_load_silver.sql
+    │   │   └── validation_silver.sql
+    │   └── init_database.sql
+    ├── tests/
+    │   ├── quality_checks_gold.sql
+    │   └── quality_checks_silver.sql
+    ├── LICENSE
+    └── README.md
+```
+
 ### Documentation & Diagramming
 - Draw.io
 - Markdown
