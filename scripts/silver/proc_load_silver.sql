@@ -60,7 +60,7 @@ AS $$
 						prd_end_dt)
 						SELECT prd_id,
 							   REPLACE (SUBSTRING(prd_key,1,5),'-','_') AS cat_id,
-							   REPLACE (SUBSTRING(prd_key,7,LENGTH(prd_key)),'-','_') AS prd_key,
+							   REPLACE (SUBSTRING(prd_key, 7, LEN(prd_key)) AS prd_key,
 							   prd_nm,
 							   COALESCE(prd_cost, 0) AS prd_cost,
 							   CASE WHEN UPPER(TRIM(prd_line)) = 'R' THEN 'Road'
